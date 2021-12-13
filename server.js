@@ -23,6 +23,6 @@ app.get("/", async (req, res) => {
 
 app.use("/api", path)
 
-app.listen(port,() => {
+app.listen(process.env.PORT,port,() => {
     console.log(`server is listening on port:${port}`)
 })
